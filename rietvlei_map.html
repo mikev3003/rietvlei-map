@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Friends of Rietvlei — Citizen Science Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -148,7 +148,9 @@
 // ==================================================
 //  PASTE YOUR GOOGLE SHEET CSV URL HERE
 // ==================================================
-const CSV_URL = "https://docs.google.com/spreadsheets/d/1KmZK71xjIl0kfLVP9itfO_x32a8D0tVS_1z2dQaIMqo/export?format=csv&gid=1457485627";
+const SHEET_ID = "1KmZK71xjIl0kfLVP9itfO_x32a8D0tVS_1z2dQaIMqo";
+const GID = "1457485627";
+const CSV_URL = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&gid=" + GID;
 
 // Column positions in the Google Sheet (0-based)
 const C = {
