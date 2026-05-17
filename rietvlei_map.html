@@ -196,7 +196,7 @@ function driveThumb(url) {
 }
 
 function load() {
-  toast("Loading sightings...", true);
+  toast("Loading observations...", true);
   Papa.parse(CSV_URL, {
     download: true, header: false, skipEmptyLines: true,
     complete: function(r) {
@@ -280,7 +280,7 @@ function makePopup(observer, date, time, comments, photoThumb, rawPhoto) {
 
   return photoHtml +
     "<div class=\"pp-body\">" +
-      "<div class=\"pp-title\">Rietvlei Sighting</div>" +
+      "<div class=\"pp-title\">Rietvlei Observation</div>" +
       "<div class=\"pp-meta\">" +
         "<b>Observer:</b> " + (observer || "Anonymous") + "<br>" +
         "<b>Date:</b> " + dateStr + (timeStr ? " at " + timeStr : "") +
